@@ -1,25 +1,25 @@
 /* styles/Gamblenomics.module.css */
 
-
-
 .photoGrid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px; /* Adjust the gap between images as needed */
-}
-.photoGrid>*img{
-  width: fit-content;
+  width: 100vh;
 }
 
-@media (max-width: 2px) {
+@media (max-width: 765px) {
   .container {
-    padding: 3px; /* Reduce overall container padding on mobile */
+    padding: 3px auto; /* Reduce overall container padding on mobile */
+    width: 100vh;
   }
   .photoContainer {
-    width: 3%; /* Take the full width on mobile */
     margin: 1px 0; /* Add spacing between images on mobile */
   }
+  .photoContainer img {
+    width: 85%;
+  }
+ 
 }
 /* .mySpan styles remain unchanged */
 .mySpan {
