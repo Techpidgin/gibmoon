@@ -167,6 +167,7 @@
 
 .button {
   position: absolute;
+  top: 45%;
   background-color: #fffdfd;
   border-radius: 10px;
   border: none;
