@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 interface EthData {
   From: string;
   Reward: string;
-
+}
 
 interface ArbData {
    From: string;
