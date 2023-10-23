@@ -167,7 +167,7 @@
 
 .button {
   position: absolute;
-  top: 80%;
+  top: 65%;
   background-color: #fffdfd;
   border-radius: 10px;
   border: none;
@@ -257,6 +257,7 @@
   }
   .button {
     font-size: 16px; /* Adjust font size for small screens */
+     top:unset;
   }
 }
 
@@ -270,7 +271,7 @@
   }
   .button {
     font-size: 20px; /* Adjust font size for larger screens */
-      top:unset;
+
   }
 }
 
