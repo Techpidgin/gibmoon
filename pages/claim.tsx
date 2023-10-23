@@ -3,28 +3,20 @@ import Header from "../component/Header";
 import Footer from "../component/Footer";
 import React, { useState, useEffect } from "react";
 
-interface EthData {
-  From: string;
-  Reward: number;
-  // Add other properties as needed
-}
-
-interface ArbData {
-  // Define the structure of ArbData here
-}
-
 const Claim: React.FC = () => {
-  const [stakingTab, setStakingTab] = useState<boolean>(true);
-  const [unStakingTab, setUnstakingTab] = useState<boolean>(false);
-  const [ethData, setEthData] = useState<EthData[]>([]);
-  const [arbData, setArbData] = useState<ArbData[]>([]);
-  const [userAddress, setUserAddress] = useState<string>("");
-  const [userReward, setUserReward] = useState<number | null>(null);
-  const [message, setMessage] = useState<string>("PLEASE PASTE ACCOUNT ADDRESS AND CLICK CHECK");
+  const [stakingTab, setStakingTab] = useState(true);
+  const [unStakingTab, setUnstakingTab] = useState(false);
+  const [ethData, setEthData] = useState([]);
+  const [arbData, setArbData] = useState([]);
+  const [userAddress, setUserAddress] = useState("");
+  const [userReward, setUserReward] = useState(null);
+  const [message, setMessage] = useState(
+    "PLEASE PASTE ACCOUNT ADDRESS AND CLICK CHECK"
+  );
 
   useEffect(() => {
     // Fetch ETH data
-    fetch("https://teal-managing-emu-484.mypinata.cloud/ipfs/QmcsuWR971NxRQX6xNEkxoJcQeicpLG8w7B4f6NzKU8Ctj?_gl=1*oxxuxt*_ga*NDIyOTU5MzMzLjE2OTgwOTE3MDQ.*_ga_5RMPXG14TE*MTY5ODA5MTcwNy4xLjEuMTY5ODA5MjQ2MC42MC4wLjA.")
+    fetch("https://teal-managing-emu-484.mypinata.cloud/ipfs/QmcsuWR971NxRQX6xNEkxoJcQeicpLG8w7B4f6NzKU8Ctj?_gl=1*1nprq6p*_ga*NDIyOTU5MzMzLjE2OTgwOTE3MDQ.*_ga_5RMPXG14TE*MTY5ODA5MTcwNy4xLjEuMTY5ODA5MjY4Mi41Mi4wLjA.")
       .then((response) => response.json())
       .then((jsonData) => {
         setEthData(jsonData.data);
@@ -40,7 +32,6 @@ const Claim: React.FC = () => {
       .then((response) => response.json())
       .then((jsonData) => {
         setArbData(jsonData.data);
-        setMessage("DATA LOADED");
       })
       .catch((error) => {
         console.error("ERROR FETCHING DATA !", error);
@@ -332,7 +323,7 @@ const Claim: React.FC = () => {
                   <input
                     className={styles.inputField}
                     type="text"
-                    name="video"
+                    name="http://localhost:3000/recktos"
                     placeholder="PASTE LINK TO VIDEO"
                     required
                   />
