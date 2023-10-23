@@ -7,7 +7,7 @@ function Footer() {
      <section className={styles.footer}>
             
               <h5 className={styles.stakingInfo1}><img
-                src="Logo.png"
+                src="logo.png"
                 alt=""
                style={{ width: '50px', height: '50px' }}
               />{' '}© 2023 GAMBLE-FI IS BASED . All rights reserved. | Brand Assets | TVL :   1,000,000 ETHER IS FUD</h5>
