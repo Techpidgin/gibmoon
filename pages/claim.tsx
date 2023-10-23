@@ -24,7 +24,7 @@ const Claim: React.FC = () => {
 
   useEffect(() => {
     // Fetch ETH data
-    fetch("http://127.0.0.1:8080/api/eth")
+    fetch("https://teal-managing-emu-484.mypinata.cloud/ipfs/QmcsuWR971NxRQX6xNEkxoJcQeicpLG8w7B4f6NzKU8Ctj?_gl=1*oxxuxt*_ga*NDIyOTU5MzMzLjE2OTgwOTE3MDQ.*_ga_5RMPXG14TE*MTY5ODA5MTcwNy4xLjEuMTY5ODA5MjQ2MC42MC4wLjA.")
       .then((response) => response.json())
       .then((jsonData) => {
         setEthData(jsonData.data);
@@ -36,7 +36,7 @@ const Claim: React.FC = () => {
       });
 
     // Fetch ARB data
-    fetch("http://127.0.0.1:8080/api/arb")
+    fetch("https://teal-managing-emu-484.mypinata.cloud/ipfs/QmS5Jxs8nFq1uqLC13edscXakNV8iMoYiQpioAVvj8VoMC?_gl=1*1uc713l*_ga*NDIyOTU5MzMzLjE2OTgwOTE3MDQ.*_ga_5RMPXG14TE*MTY5ODA5MTcwNy4xLjEuMTY5ODA5MjY3NC42MC4wLjA.")
       .then((response) => response.json())
       .then((jsonData) => {
         setArbData(jsonData.data);
