@@ -8,7 +8,9 @@
   justify-content: center;
   gap: 10px; /* Adjust the gap between images as needed */
 }
-
+.photoGrid>*img{
+  width: fit-content;
+}
 
 @media (max-width: 2px) {
   .container {
