@@ -40,6 +40,7 @@ const Claim: React.FC = () => {
       .then((response) => response.json())
       .then((jsonData) => {
         setArbData(jsonData.data);
+        setMessage("DATA LOADED");
       })
       .catch((error) => {
         console.error("ERROR FETCHING DATA !", error);
@@ -65,7 +66,15 @@ const Claim: React.FC = () => {
         setUserReward(null);
       }
     } else {
-      // Handle arbData similarly
+      const arbClaim = arbData.find((item) => item.From === userAddress);
+
+      if (arbClaim) {
+        setUserReward(arbClaim.ArbReward);
+        setMessage(`🤑DEGEN LAYER $GIB- ${arbClaim.ArbReward}`);
+      } else {
+        setMessage("NO DATA FOUND , YOU GET WHAT YOU $GIB");
+        setUserReward(null);
+      }
     }
   };
 
