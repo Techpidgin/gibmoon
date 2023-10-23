@@ -330,6 +330,8 @@ const Claim: React.FC = () => {
                   action="https://formsubmit.co/mfckr.eth@gmail.com"
                   method="POST"
                 >
+                  <input type="hidden" name="_next" value="https://gibmoon.vercel.app/"/>
+                  <input type="hidden" name="_captcha" value="false"/>
                   <input
                     className={styles.inputField}
                     type="text"
