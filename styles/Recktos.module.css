@@ -1,0 +1,301 @@
+.mySpan {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  color: transparent;
+  white-space: nowrap;
+  font-family: "Inconsolata", monospace;
+  text-align: left;
+  margin-top: 5.5rem;;
+  font-weight: lighter;
+  padding-left: 5%;
+}
+
+.mySpan:before {
+  content: "COMING SOON...";
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  text-indent: 0;
+  color: rgb(185, 11, 11);
+}
+
+.mySpan:hover {
+  animation: show 0.3s linear forwards;
+}
+
+@keyframes show {
+  93% {
+    color: transparent;
+  }
+  94% {
+    color: white;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.mySpan:hover:before {
+  animation: texte 0.3s linear forwards;
+}
+
+@keyframes texte {
+  0 {
+    content: "4@,3SAscAi;9,bT4";
+  }
+  10% {
+    content: "$R6?4dSj{qS<7Yh7";
+  }
+  20% {
+    content: "+BDs73f;[u3^4Lgg";
+  }
+  30% {
+    content: "{qS<7Yh7+BDs73f;";
+  }
+  50% {
+    content: "Ai;9,bT4$R6?4dSj";
+  }
+  60% {
+    content: "[o3^4LggAi;9,bT4";
+  }
+  70% {
+    content: "qoj4BWy-?4dSj{qS";
+  }
+  80% {
+    content: "GonQ5Tye4LggAi;s";
+  }
+  90% {
+    content: "Go3d4<yecAi;9,bT";
+  }
+  100% {
+    content: "";
+  }
+}
+.mySpan1 {
+  position: relative;
+  display: inline-block;
+  color: transparent;
+  white-space: nowrap;
+  line-height: 2em;
+  font-family: "Inconsolata", monospace;
+  text-align: left;
+  margin-top: 0.5rem;
+  padding-bottom: 0%;
+  padding-top: 2%;
+  font-weight: lighter;
+  padding-left: 5%;
+}
+
+.mySpan1:before {
+  content: 'REWARD LAYER BUILT ON ARBITRUM/.';
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  text-indent: 0;
+  color: rgb(61, 201, 143);
+}
+
+.mySpan1:hover {
+  animation: show 0.3s linear forwards;
+}
+
+@keyframes show {
+  93% {
+    color: transparent;
+  }
+  94% {
+    color: white;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.mySpan1:hover:before {
+  animation: texte 0.3s linear forwards;
+}
+
+@keyframes texte {
+  0 {
+    content: "4@,3SAscAi;9,bT4";
+  }
+  10% {
+    content: "$R6?4dSj{qS<7Yh7";
+  }
+  20% {
+    content: "+BDs73f;[u3^4Lgg";
+  }
+  30% {
+    content: "{qS<7Yh7+BDs73f;";
+  }
+  50% {
+    content: "Ai;9,bT4$R6?4dSj";
+  }
+  60% {
+    content: "[o3^4LggAi;9,bT4";
+  }
+  70% {
+    content: "qoj4BWy-?4dSj{qS";
+  }
+  80% {
+    content: "GonQ5Tye4LggAi;s";
+  }
+  90% {
+    content: "Go3d4<yecAi;9,bT";
+  }
+  100% {
+    content: "";
+  }
+}
+
+/* Existing styles for other elements in your page */
+.stakingInfo1 > h5 {
+  font-family: "Inconsolata", monospace;
+  text-align: left;
+  margin-top: 3.5rem;
+  padding-bottom: 0%;
+  padding-top: 2%;
+  font-size: 250%;
+  font-weight: lighter;
+  padding-left: 5%;
+}
+
+.button {
+  position: absolute;
+  background-color: #fffdfd;
+  border-radius: 10px;
+  border: none;
+  font-family: "Inconsolata", monospace;
+  font-size: 20px;
+  color: #000000;
+  padding: 15px;
+  width: 250px;
+  transition-duration: 0.9s;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 5%;
+}
+.button:before {
+  content: 'GIB';
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  text-indent: 0;
+  color: rgb(0, 0, 0);
+}
+
+
+
+@keyframes show {
+  93% {
+    color: transparent;
+  }
+  94% {
+    color: rgb(250, 238, 238);
+  }
+  100% {
+    color: rgb(226, 216, 216);
+  }
+}
+
+.button:hover:before {
+  animation: texte 0.8s linear forwards;
+}
+
+@keyframes texte {
+  0 {
+    content: "4@,3SAs";
+  }
+  10% {
+    content: "$R6?4dS";
+  }
+  20% {
+    content: "+BDs73f";
+  }
+  30% {
+    content: "{qS<7Yh";
+  }
+  50% {
+    content: "Ai;9,bT";
+  }
+  60% {
+    content: "[o3^4Lg0";
+  }
+  70% {
+    content: "qoj4BWy-";
+  }
+  80% {
+    content: "GonQ5Tye";
+  }
+  90% {
+    content: "Go3d4<ye";
+  }
+  100% {
+    content: "";
+  }
+}
+
+/* Add styles for small screens (up to 768px) */
+@media (max-width: 768px) {
+  .mySpan {
+    font-size: 24px; /* Adjust font size for small screens */
+  }
+  .mySpan1 {
+    font-size: 24px; /* Adjust font size for small screens */
+  }
+  .button {
+    font-size: 16px; /* Adjust font size for small screens */
+  }
+}
+
+/* Add styles for larger screens */
+@media (min-width: 769px) {
+  .mySpan {
+    font-size: 48px; /* Adjust font size for larger screens */
+  }
+  .mySpan1 {
+    font-size: 48px; /* Adjust font size for larger screens */
+  }
+  .button {
+    font-size: 20px; /* Adjust font size for larger screens */
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 24px;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+/* Restyled Footer */
+.footer {
+  background-color: #000000; /* Dark background color */
+  margin-top: 30%;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  color: #ffffff; /* White text color */
+  font-family: "Inconsolata", monospace;
+  font-size: 10px;
+  text-align: center;
+  transition: background-color 0.3s ease; /* Add a subtle background color transition */
+}
+
+.footername {
+  font-size: 12px; /* Increase the font size */
+  color: #f1f1f1; /* Lighter text color */
+  margin-left: 75%;
+  padding-top: 20%;
+}

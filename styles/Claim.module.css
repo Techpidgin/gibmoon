@@ -1,0 +1,412 @@
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding:0px;
+  background-image: url("/gibbanner.png"); /* Set the background image URL */
+  background-size: cover; /* Cover the entire container with the image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  background-position: center; /* Center the background image */
+  text-align: center;
+}
+
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4px;
+  text-align: center;
+  font-family: "Inconsolata", monospace;
+}
+
+
+
+
+
+.stakingDataContainer {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inconsolata", monospace;
+  width: 75rem;
+  margin-top: 5rem;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  transition: transform 0.2s ease;
+}
+
+.stakingDataContainer:hover {
+  transform: scale(1.05);
+}
+/* Modify .stakingInfo > h2 styles for mobile */
+.stakingInfo > h2 {
+  font-size: 16px;
+  margin-top: 1rem;
+  padding-bottom: 3%;
+}
+
+/* Modify .stakingBtn styles for mobile */
+.stakeBtn {
+  font-size: 14px;
+  margin-top: 5%;
+  padding: 12px;
+}
+
+/* .space{
+  position: relative;
+  left: 20px;
+} */
+
+/* Modify .lockedStaking input styles for mobile */
+.lockedStaking input {
+  font-size: 16px;
+  margin: 0.5rem 0;
+  padding: 0.7rem;
+}
+
+/* Modify .stakingInfoSection styles for mobile */
+.stakingInfoSection {
+  padding: 10px;
+}
+
+/* Modify .title styles for mobile */
+.title {
+  font-size: 16px;
+  margin-top: 5%;
+  padding: 10px;
+}
+.logo > img {
+  width: 30%;
+}
+
+.stakebutton {
+  position: relative;
+  background-color: #464040;
+  border-radius: 5px;
+  border: none;
+  font-family: "Inconsolata", monospace;
+  font-size: 13px;
+  color: #ffffff;
+  padding: 15px;
+  width: 150px;
+  transition-duration: 0.9s;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.stakebutton:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.stakebutton:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+.unstakebutton {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-left: 5%;
+  border: none;
+  font-family: "Inconsolata", monospace;
+  font-size: 13px;
+  color: #000000;
+  padding: 15px;
+  width: 150px;
+  transition-duration: 0.9s;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.unstakebutton:after {
+  content: "";
+  background: #222020;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.unstakebutton:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+.stakingContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 150px;
+  background-color: #000000;
+}
+
+
+
+
+.stakeingType:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+.stakeUnstakeTab {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    /* Modify header styles for mobile */
+    padding: 1% 2%;
+    flex: content;
+  }
+
+  /* Modify .stakeingType styles for mobile */
+  .stakeingType {
+    padding: 15px;
+    font-size: 12px;
+  }
+
+  /* Modify .stakingContainer styles for mobile */
+  .stakingContainer {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  /* Modify .stakingSection styles for mobile */
+  .stakingSection {
+    height: auto;
+  }
+
+  /* Modify .stakingBox styles for mobile */
+  .stakingBox {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Modify .inputField styles for mobile */
+  .inputField {
+    width: 100%;
+    font-size: 16px;
+    margin: 0.5rem 0;
+    padding: 0.7rem;
+  }
+
+  /* Modify .stakingInfo > h2 styles for mobile */
+  .stakingInfo > h2 {
+    font-size: 16px;
+    margin-top: 1rem;
+    padding-bottom: 3%;
+  }
+
+  /* Modify .stakingBtn styles for mobile */
+  .stakeBtn {
+    font-size: 5px;
+    margin-top: 5%;
+    padding: 12px;
+  }
+
+  /* .space{
+    position: relative;
+    left: 20px;
+  } */
+
+  /* Modify .lockedStaking input styles for mobile */
+  .lockedStaking input {
+    font-size: 5px;
+    margin: 0.5rem 0;
+    padding: 0.7rem;
+  }
+
+  /* Modify .stakingInfoSection styles for mobile */
+  .stakingInfoSection {
+    padding: 10px;
+  }
+
+  /* Modify .title styles for mobile */
+  .title {
+    font-size: 16px;
+    margin-top: 5%;
+    padding: 10px;
+  }
+  .logo > img {
+    width: 30%;
+  }
+}
+
+.stakingBox {
+  display: flex;
+  padding-bottom: 10%;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 75%;
+  font-family: "Inconsolata", monospace;
+  border-radius: 5%;
+  background-color: #000000;
+  box-shadow: rgba(36, 40, 71, 0.15) 0px 10px 22px,
+    rgb(70, 68, 68) 0px 21px 25px;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.stakingBox:hover {
+  transform: scale(1.05);
+}
+
+.stakingBox > h2 {
+  margin-top: 1rem;
+  font-size: medium;
+}
+
+.inputField::-webkit-inner-spin-button,
+.inputField::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.stakingInfo > h2 {
+  font-family: "Inconsolata", monospace;
+  text-align: center;
+  margin-top: 0.5rem;
+  padding-bottom: 8%;
+}
+.stakingInfo1 > h5 {
+  font-family: "Inconsolata", monospace;
+  text-align: left;
+  margin-top: 6.5rem;
+  padding-bottom: 0%;
+  padding-top: 5%;
+}
+
+/* Input Field */
+.inputField {
+  width: 90%;
+  height: 3.3rem;
+  font-family: "Inconsolata", monospace;
+  background-color: #464040;
+  font-size: 0.9rem;
+  margin: 2.9rem 0;
+  padding-left: 0.5rem;
+  border-radius: 0.3rem;
+  border: none;
+  outline: none;
+  color: #fdfdfd;
+}
+
+
+
+/* Staking Info */
+.stakingInfoOne > p {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(238, 174, 202);
+}
+
+/* Stake/Unstake Button */
+.stakeBtn {
+  position: relative;
+  background-color: #fdfdfd;
+  border-radius: 5px;
+  border: none;
+  font-family: "Inconsolata", monospace;
+  font-size: 13px;
+  color: #000000;
+  padding: 12px;
+  margin-top: 2%;
+  width: 150px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor:grab;
+}
+
+.stakeBtn:after {
+  content: "";
+  background: #000000;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.stakeBtn:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+.stakingInfoSection {
+  background-color: #000000;
+  font-family: "Inconsolata", monospace;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: rgba(36, 40, 71, 0.15) 0px 10px 22px,
+    rgb(86, 86, 87) 0px 21px 25px;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.stakingInfoSection:hover {
+  transform: scale(1.05);
+}
+
+
+.LockStakingAPY1 {
+  font-weight: small;
+  color: #2e5746;
+  font-family: "Inconsolata", monospace;
+}
+
+/* Locked Staking Input */
+.lockedStaking input {
+  width: 95%;
+  height: 2.3rem;
+  font-family: "Inconsolata", monospace;
+  background-color: #464040;
+  font-size: 0.9rem;
+  margin: 1rem 0;
+  padding-left: 0.5rem;
+  padding-right: 5%;
+  border-radius: 0.2rem;
+  border: none;
+  outline: none;
+}
+
+.errorMessage {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 6%;
+}
+
+.lockedStaking input::placeholder {
+  font-size: 0.7rem;
+  color: #939e99;
+}
+

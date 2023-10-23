@@ -1,0 +1,268 @@
+/* Default styles for the container, logo, and menu */
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-family: "Inconsolata", monospace;
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  flex: 1; /* Expand to fill available space */
+}
+
+.logo {
+  max-width: 90px; /* Reduce the logo size further as needed */
+  height: auto;
+  transition: transform 0.1s ease;
+}
+
+.menuSection {
+  display: flex;
+  align-items: center;
+  font-family: "Inconsolata", monospace;
+}
+
+.link {
+  font-size: medium;
+  font-weight: 12px;
+  margin-right: 60px;
+  margin-left: 60;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: color 0.1s;
+}
+
+.link:hover {
+  color: rgb(61, 201, 143);
+}
+
+.button1 {
+  position: absolute;
+  background-color: #fffdfd;
+  border-radius: 10px;
+  border: none;
+  font-family: "Inconsolata", monospace;
+  font-size: 10px;
+  color: #000000;
+  padding: 15px;
+  width: 100px;
+  transition-duration: 0.9s;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 5%;
+}
+.button1:before {
+  content: 'HOME';
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  text-indent: 0;
+  color: rgb(0, 0, 0);
+}
+
+
+
+@keyframes show {
+  93% {
+    color: transparent;
+  }
+  94% {
+    color: rgb(250, 238, 238);
+  }
+  100% {
+    color: rgb(226, 216, 216);
+  }
+}
+
+.button1:hover:before {
+  animation: texte 0.8s linear forwards;
+}
+
+@keyframes texte {
+  0 {
+    content: "4@,3SAs";
+  }
+  10% {
+    content: "$R6?4dS";
+  }
+  20% {
+    content: "+BDs73f";
+  }
+  30% {
+    content: "{qS<7Yh";
+  }
+  50% {
+    content: "Ai;9,bT";
+  }
+  60% {
+    content: "[o3^4Lg0";
+  }
+  70% {
+    content: "qoj4BWy-";
+  }
+  80% {
+    content: "GonQ5Tye";
+  }
+  90% {
+    content: "Go3d4<ye";
+  }
+  100% {
+    content: "";
+  }
+}
+
+.button2 {
+  position: absolute;
+  background-color: #fffdfd;
+  border-radius: 10px;
+  border: none;
+  font-family: "Inconsolata", monospace;
+  font-size: 10px;
+  color: #000000;
+  padding: 15px;
+  width: 100px;
+  transition-duration: 0.9s;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 5%;
+}
+.button2:before {
+  content: 'CLAIM';
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  text-indent: 0;
+  color: rgb(0, 0, 0);
+}
+
+
+
+@keyframes show {
+  93% {
+    color: transparent;
+  }
+  94% {
+    color: rgb(250, 238, 238);
+  }
+  100% {
+    color: rgb(226, 216, 216);
+  }
+}
+
+.button2:hover:before {
+  animation: texte 0.8s linear forwards;
+}
+
+@keyframes texte {
+  0 {
+    content: "4@,3SAs";
+  }
+  10% {
+    content: "$R6?4dS";
+  }
+  20% {
+    content: "+BDs73f";
+  }
+  30% {
+    content: "{qS<7Yh";
+  }
+  50% {
+    content: "Ai;9,bT";
+  }
+  60% {
+    content: "[o3^4Lg0";
+  }
+  70% {
+    content: "qoj4BWy-";
+  }
+  80% {
+    content: "GonQ5Tye";
+  }
+  90% {
+    content: "Go3d4<ye";
+  }
+  100% {
+    content: "";
+  }
+}
+.active {
+  font-size: small;
+  font-weight: 900;
+  margin-right: 20px;
+  color: rgb(255, 255, 255);
+}
+
+/* Styles for the mobile menu icon and content */
+.mobileIcon {
+  cursor: pointer;
+  font-size: 24px;
+  display: none;
+}
+
+.mobileMenuContent {
+  display: none;
+  flex-direction: column;
+  background-color: #333;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  z-index: 1;
+  font-family: "Inconsolata", monospace;
+}
+
+.mobileMenuContent a {
+  font-size: small;
+  font-weight: 12px;
+  color: rgb(13, 218, 173);
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: color 0.2s;
+  font-family: "Inconsolata", monospace;
+}
+
+
+.mobileMenuContent a:hover {
+  color: rgb(255, 255, 255);
+}
+
+/* Media query for screens with a width up to 768px (typical for mobile) */
+@media (max-width: 768px) {
+  .mobileIcon {
+    display: block;
+  }
+  
+  .mobileMenuContent {
+    display: flex;
+    position: relative;
+  }
+
+  .desktopMenu {
+    display: none;
+  }
+  
+  /* Styles for the close button in the mobile menu */
+  .mobileCloseButton {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: rgb(13, 218, 173);
+  }
+}
