@@ -2,7 +2,16 @@ import styles from "../styles/Claim.module.css";
 import Header from "../component/Header";
 import Footer from "../component/Footer";
 import React, { useState, useEffect } from "react";
+interface EthData {
+  From: string;
+  Reward: string;
 
+
+interface ArbData {
+   From: string;
+  ArbReward: string;
+
+}
 const Claim: React.FC = () => {
   const [stakingTab, setStakingTab] = useState(true);
   const [unStakingTab, setUnstakingTab] = useState(false);
