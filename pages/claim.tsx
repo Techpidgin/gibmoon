@@ -189,7 +189,7 @@ const Claim: React.FC = () => {
           <section className={styles.stakingInfo1}>
             <h5>
               <img
-                src="Logo.png"
+                src="logo.png"
                 alt=""
                 style={{ width: "20px", height: "20px" }}
               />{" "}
