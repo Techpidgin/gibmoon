@@ -2,24 +2,25 @@ import styles from "../styles/Claim.module.css";
 import Header from "../component/Header";
 import Footer from "../component/Footer";
 import React, { useState, useEffect } from "react";
+
 interface EthData {
   From: string;
   Reward: string;
 }
 
 interface ArbData {
-   From: string;
+  From: string;
   ArbReward: string;
-
 }
+
 const Claim: React.FC = () => {
-  const [stakingTab, setStakingTab] = useState(true);
-  const [unStakingTab, setUnstakingTab] = useState(false);
-  const [ethData, setEthData] = useState([]);
-  const [arbData, setArbData] = useState([]);
-  const [userAddress, setUserAddress] = useState("");
-  const [userReward, setUserReward] = useState(null);
-  const [message, setMessage] = useState(
+  const [stakingTab, setStakingTab] = useState<boolean>(true);
+  const [unStakingTab, setUnstakingTab] = useState<boolean>(false);
+  const [ethData, setEthData] = useState<EthData[]>([]); // Provide an initial empty array of EthData
+  const [arbData, setArbData] = useState<ArbData[]>([]); // Provide an initial empty array of ArbData
+  const [userAddress, setUserAddress] = useState<string>("");
+  const [userReward, setUserReward] = useState<string | null>(null); // Initialize as null
+  const [message, setMessage] = useState<string>(
     "PLEASE PASTE ACCOUNT ADDRESS AND CLICK CHECK"
   );
 
@@ -37,7 +38,7 @@ const Claim: React.FC = () => {
       });
 
     // Fetch ARB data
-    fetch("https://teal-managing-emu-484.mypinata.cloud/ipfs/QmS5Jxs8nFq1uqLC13edscXakNV8iMoYiQpioAVvj8VoMC?_gl=1*1uc713l*_ga*NDIyOTU5MzMzLjE2OTgwOTE3MDQ.*_ga_5RMPXG14TE*MTY5ODA5MTcwNy4xLjEuMTY5ODA5MjY3NC42MC4wLjA.")
+    fetch("https://teal-managing-emu-484.mypinata.cloud/ipfs/QmS5Jxs8nFq1uqLC13edscXakNV8iMoYiQpioAVvj8VoMC?_gl=1*1uc713l*_ga*NDIyOTU9MTQ4LjE2OTgwOTM0NC4xLjEuMTY5ODA5MzQwLjAuMC4wLjA.")
       .then((response) => response.json())
       .then((jsonData) => {
         setArbData(jsonData.data);
@@ -62,7 +63,7 @@ const Claim: React.FC = () => {
         setUserReward(ethClaim.Reward);
         setMessage(`🤑ASSET LAYER $GIB- ${ethClaim.Reward}`);
       } else {
-        setMessage("NO DATA FOUND , YOU GET WHAT YOU $GIB");
+        setMessage("NO DATA FOUND, YOU GET WHAT YOU $GIB");
         setUserReward(null);
       }
     } else {
@@ -72,7 +73,7 @@ const Claim: React.FC = () => {
         setUserReward(arbClaim.ArbReward);
         setMessage(`🤑DEGEN LAYER $GIB- ${arbClaim.ArbReward}`);
       } else {
-        setMessage("NO DATA FOUND , YOU GET WHAT YOU $GIB");
+        setMessage("NO DATA FOUND, YOU GET WHAT YOU $GIB");
         setUserReward(null);
       }
     }
@@ -332,7 +333,7 @@ const Claim: React.FC = () => {
                   <input
                     className={styles.inputField}
                     type="text"
-                    name="http://localhost:3000/recktos"
+                    name="video"
                     placeholder="PASTE LINK TO VIDEO"
                     required
                   />
