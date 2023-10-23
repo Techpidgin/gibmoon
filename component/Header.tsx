@@ -50,7 +50,7 @@ const Header: React.FC = () => {
                 router.pathname === "/recktos" ? styles.active : styles.link
               }
             >
-              RECKTOS
+              RECKTO GAMES
             </a>
           </Link>
 
