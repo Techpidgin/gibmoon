@@ -41,7 +41,7 @@
 }
 
 .mySpan:before {
-  content: "ASSET LAYER SUPPLY : 21 million || DEGEN LATER SUPPLY: 21 TRILLION";
+  content: "ASSET LAYER SUPPLY: 21 MILLION  || DEGEN LAYER SUPPLY: 21 TRILLION";
   position: relative;
   top: 0;
   left: 0;
