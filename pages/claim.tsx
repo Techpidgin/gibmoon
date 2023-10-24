@@ -56,8 +56,10 @@ const Claim: React.FC = () => {
       return;
     }
 
+    const lowercaseAddress = userAddress.toLowerCase();
+
     if (stakingTab) {
-      const ethClaim = ethData.find((item) => item.From === userAddress);
+      const ethClaim = ethData.find((item) => item.From === lowercaseAddress);
 
       if (ethClaim) {
         setUserReward(ethClaim.Reward);
@@ -67,7 +69,7 @@ const Claim: React.FC = () => {
         setUserReward(null);
       }
     } else {
-      const arbClaim = arbData.find((item) => item.From === userAddress);
+      const arbClaim = arbData.find((item) => item.From === lowercaseAddress);
 
       if (arbClaim) {
         setUserReward(arbClaim.ArbReward);
