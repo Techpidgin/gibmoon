@@ -50,7 +50,7 @@ const Header: React.FC = () => {
                 router.pathname === "/recktos" ? styles.active : styles.link
               }
             >
-              RECKTO GAMES
+              RECKTOS
             </a>
           </Link>
 
@@ -64,6 +64,18 @@ const Header: React.FC = () => {
               }
             >
               GAMBLENOMICS
+            </a>
+          </Link>
+          <Link legacyBehavior href="/Whitepaper">
+            <a
+              id="link"
+              className={
+                router.pathname === "/Whitepaper"
+                  ? styles.active
+                  : styles.link
+              }
+            >
+              WHITEPAPER
             </a>
           </Link>
         </div>
