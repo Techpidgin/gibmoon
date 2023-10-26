@@ -53,6 +53,7 @@ const Header: React.FC = () => {
               RECKTOS
             </a>
           </Link>
+
           <Link legacyBehavior href="/Whitepaper">
             <a
               id="link"
