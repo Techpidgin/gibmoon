@@ -3,6 +3,7 @@ import { NextPage } from "next";
 import Header from "../component/Header";
 import Footer from "../component/Footer";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Home: NextPage = () => {
   return (
