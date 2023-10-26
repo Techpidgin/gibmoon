@@ -1,0 +1,104 @@
+/* styles/Gamblenomics.module.css */
+
+.photoGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Adjust the gap between images as needed */
+}
+
+@media (max-width: 765px) {
+  .container {
+    padding: 3px 0; /* Reduce overall container padding on mobile */
+    width: 100vh;
+
+  }
+  
+.photoGrid {
+  width: 500vh;
+  padding: 0 0 0 15%; 
+}
+  .photoContainer {
+    margin: 1px 0; /* Add spacing between images on mobile */
+  }
+  .photoContainer img {
+    width: 85%;
+  }
+ 
+}
+/* .mySpan styles remain unchanged */
+.mySpan {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  color: transparent;
+  white-space: nowrap;
+  font-family: "Inconsolata", monospace;
+  text-align: left;
+  margin-top: 5.5rem;
+  font-weight: lighter;
+  padding-left: 5%;
+}
+
+.mySpan:before {
+  content: "ASSET LAYER ./ || DEGEN LATER /.";
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  text-indent: 0;
+  color: rgb(11, 185, 69);
+}
+
+.mySpan:hover {
+  animation: show 0.3s linear forwards;
+}
+
+@keyframes show {
+  93% {
+    color: transparent;
+  }
+  94% {
+    color: white;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.mySpan:hover:before {
+  animation: texte 0.3s linear forwards;
+}
+
+@keyframes texte {
+  0 {
+    content: "4@,3SAscAi;9,bT4";
+  }
+  10% {
+    content: "$R6?4dSj{qS<7Yh7";
+  }
+  20% {
+    content: "+BDs73f;[u3^4Lgg";
+  }
+  30% {
+    content: "{qS<7Yh7+BDs73f;";
+  }
+  50% {
+    content: "Ai;9,bT4$R6?4dSj";
+  }
+  60% {
+    content: "[o3^4LggAi;9,bT4";
+  }
+  70% {
+    content: "qoj4BWy-?4dSj{qS";
+  }
+  80% {
+    content: "GonQ5Tye4LggAi;s";
+  }
+  90% {
+    content: "Go3d4<yecAi;9,bT";
+  }
+  100% {
+    content: "";
+  }
+}
