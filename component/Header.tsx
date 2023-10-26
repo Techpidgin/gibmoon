@@ -54,7 +54,7 @@ const Header: React.FC = () => {
             </a>
           </Link>
 
-          <Link legacyBehavior href="/Whitepaper">
+          <Link legacyBehavior href="/whitepaper">
             <a
               id="link"
               className={
