@@ -85,8 +85,8 @@ const Header: React.FC = () => {
                 <a>RECKTOS</a>
               </Link>
               
-              <Link legacyBehavior href="/gamblenomics">
-                <a>GAMBLENOMICS</a>
+              <Link legacyBehavior href="/whitepaper">
+                <a>WHITEPAPER</a>
               </Link>
               
             </div>
