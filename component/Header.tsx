@@ -58,7 +58,7 @@ const Header: React.FC = () => {
             <a
               id="link"
               className={
-                router.pathname === "/Whitepaper"
+                router.pathname === "/whitepaper"
                   ? styles.active
                   : styles.link
               }
