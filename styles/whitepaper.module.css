@@ -10,23 +10,22 @@
 @media (max-width: 765px) {
   .container {
     padding: 3px 0; /* Reduce overall container padding on mobile */
-    width: 100vh;
+  }
 
+  .photoGrid {
+    flex-direction: column; /* Stack images in a column on mobile */
+    align-items: center; /* Center-align images */
   }
-  
-.photoGrid {
-  width: 500vh;
-  padding: 0 0 0 15%; 
-}
+
   .photoContainer {
-    margin: 1px 0; /* Add spacing between images on mobile */
+    margin: 10px 0; /* Add spacing between images on mobile */
   }
+
   .photoContainer img {
-    width: 85%;
+    width: 100%; /* Make images full width on mobile */
   }
- 
 }
-/* .mySpan styles remain unchanged */
+
 .mySpan {
   position: relative;
   display: inline-block;
