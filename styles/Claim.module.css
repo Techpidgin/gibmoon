@@ -19,34 +19,24 @@
   font-size: 13px;
   color: #ffffff;
   padding: 15px;
-  width: 150px;
-  transition-duration: 0.9s;
-  text-align: center;
-  transition-duration: 0.4s;
-  text-decoration: none;
-  overflow: hidden;
+  width: 100px;
+  margin-left: 2rem;
   cursor: pointer;
 }
-.tweetword:after {
-  content: "";
-  background: #f1f1f1;
-  display: block;
-  position: absolute;
-  padding-top: 300%;
-  padding-left: 350%;
-  margin-left: -20px !important;
-  margin-top: -120%;
-  opacity: 0;
-  transition: all 0.8s;
-}
 
-.tweetword:active:after {
-  padding: 0;
-  margin: 0;
-  opacity: 1;
-  transition: 0s;
+.tweetword1 {
+  position: relative;
+  background-color: #26a7de;
+  border-radius: 5px;
+  border: none;
+  font-family: "Inconsolata", monospace;
+  font-size: 13px;
+  color: #ffffff;
+  padding: 15px;
+  margin-left: 1rem;
+  width: 100px;
+  cursor: pointer;
 }
-
 
 .info {
   display: flex;
@@ -78,9 +68,11 @@
 /* Modify .stakingInfo > h2 styles for mobile */
 .stakingInfo > h2 {
   font-size: 16px;
-  margin-top: 1rem;
+  margin-top: 5rem;
   padding-bottom: 3%;
+  font-family: 'Courier New', Courier, monospace;
 }
+
 
 /* Modify .stakingBtn styles for mobile */
 .stakeBtn {
