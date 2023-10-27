@@ -112,7 +112,7 @@ const Claim: React.FC = () => {
            
         </a>
         <h2>
-          <img src="x.jpeg" alt="X" style={{ width: "25px", height: "25px" }} />{" "}
+          <img src="X.jpeg" alt="X" style={{ width: "25px", height: "25px" }} />{" "}
           POST PROOF OF $GIB ON X TO BOOST 🚀 YOUR REWARD
         </h2>
       </section>
