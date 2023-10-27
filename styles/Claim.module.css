@@ -10,6 +10,42 @@
   background-position: center; /* Center the background image */
   text-align: center;
 }
+.tweetword {
+  position: relative;
+  background-color: #26a7de;
+  border-radius: 5px;
+  border: none;
+  font-family: "Inconsolata", monospace;
+  font-size: 13px;
+  color: #ffffff;
+  padding: 15px;
+  width: 150px;
+  transition-duration: 0.9s;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+.tweetword:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.tweetword:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
 
 
 .info {
@@ -147,7 +183,24 @@
   opacity: 0;
   transition: all 0.8s;
 }
+.tweet{
+  position: relative;
+  background-color: #e6f3e6;
+  border-radius: 3px;
+  border: none;
+  font-family: "Inconsolata", monospace;
+  font-size: 15px;
+  color: #ffffff;
+  padding: 15px;
+  width: 150px;
+  transition-duration: 0.9s;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
 
+}
 .unstakebutton:active:after {
   padding: 0;
   margin: 0;
