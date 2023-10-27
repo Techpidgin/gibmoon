@@ -111,8 +111,8 @@ const Claim: React.FC = () => {
              TWEET 
         </a>
         <h2>
-          <img src="X.jpeg" alt="X" style={{ width: "25px", height: "25px" }} />{" "}
-          POST PROOF OF $GIB X3 YOUR REWARD
+          <img src="dice.jpeg" alt="X" style={{ width: "25px", height: "25px" }} />{" "}
+          POST PROOF OF $GIB X3 🚀 YOUR REWARD
         </h2>
       </section>
 
