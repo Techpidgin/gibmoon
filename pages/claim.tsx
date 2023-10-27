@@ -103,19 +103,21 @@ const Claim: React.FC = () => {
     <div className={styles.container}>
       <Header />
       <section className={styles.stakingInfo}>
-        <a
-          className={styles.tweetword}
-          href="https://twitter.com/intent/tweet?text=THIS%20IS%20MY%20PROOF%20OF%20$GIB🎲%20BOOST🚀🚀🚀%20CLAIM%20OVER%2010,000,000%02MILLION%20$GIB%20TOKENS%20AT%20gib.casino%20AND%20FOLLOW%20@GIBISBIG %20."
-          data-size="large"
-        >
-             TWEET 🚀
-           
-        </a>
-        <h2>
-          <img src="X.jpeg" alt="X" style={{ width: "25px", height: "25px" }} />{" "}
-          POST PROOF OF $GIB ON X TO BOOST 🚀 YOUR REWARD
-        </h2>
-      </section>
+  <h2>
+    <img src="X.jpeg" alt="X" style={{ width: "25px", height: "25px" }} />{" "}
+    POST PROOF OF $GIB FOLLOW ON X FOR BOOST🚀
+  </h2>
+  <a
+    className={styles.tweetword1}
+    href="https://twitter.com/intent/tweet?text=THIS%20IS%20MY%20PROOF%20OF%20$GIB🎲%20BOOST🚀🚀🚀%20CLAIM%20OVER%2010,000,000%02MILLION%20$GIB%20TOKENS%20AT%20gib.casino%20AND%20FOLLOW%20@GIBISBIG%20."
+    data-size="large"
+  >
+    TWEET🚀
+  </a>
+  <a className={styles.tweetword} href="https://twitter.com/GIBISBIG">
+    FOLLOW 🚀
+  </a>
+</section>
 
       <section className={styles.stakingContainer}>
         <section>
