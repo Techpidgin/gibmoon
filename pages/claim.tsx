@@ -108,11 +108,12 @@ const Claim: React.FC = () => {
           href="https://twitter.com/intent/tweet?text=THIS%20IS%20MY%20PROOF%20OF%20$GIB🎲%20BOOST🚀🚀🚀%20CLAIM%20OVER%2010,000,000%02MILLION%20$GIB%20TOKENS%20AT%20gib.casino%20AND%20FOLLOW%20@GIBISBIG %20."
           data-size="large"
         >
-             TWEET 
+             TWEET 🚀
+           
         </a>
         <h2>
-          <img src="dice.jpeg" alt="X" style={{ width: "25px", height: "25px" }} />{" "}
-          POST PROOF OF $GIB X3 🚀 YOUR REWARD
+          <img src="x.jpeg" alt="X" style={{ width: "25px", height: "25px" }} />{" "}
+          POST PROOF OF $GIB ON X TO BOOST 🚀 YOUR REWARD
         </h2>
       </section>
 
