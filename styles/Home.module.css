@@ -1,5 +1,5 @@
 .container {
-  width: 200%;
+  width: 100%;
   max-width: 1800px;
   margin: 0 auto;
   padding: 0px;
@@ -262,21 +262,30 @@
   }
 }
 
-/* Add styles for larger screens */
-@media (min-width: 769px) {
+/* Add styles for small screens (up to 768px) */
+@media (max-width: 768px) {
+  .container {
+    width: 350%;
+    padding: 0 0px; /* Add some padding to the left and right for small screens */
+    background-size: 100% auto; /* Adjust background size to maintain aspect ratio */
+    background-position: top; /* Align background to the top for small screens */
+  }
+
   .mySpan {
-    font-size: 48px;
-    /* Adjust font size for larger screens */
+    font-size: 24px; /* Adjust font size for small screens */
+    margin-top: 5%; /* Adjust the top margin for small screens */
   }
+
   .mySpan1 {
-    font-size: 48px; /* Adjust font size for larger screens */
+    font-size: 24px; /* Adjust font size for small screens */
+    margin-top: 5%; /* Adjust the top margin for small screens */
   }
+
   .button {
-    font-size: 20px; /* Adjust font size for larger screens */
+    font-size: 16px; /* Adjust font size for small screens */
+    margin-right: 0; /* Remove the right margin for small screens */
   }
 }
-
-
 
 /* Restyled Footer */
 .footer {
