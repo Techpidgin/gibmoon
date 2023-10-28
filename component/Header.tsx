@@ -1,12 +1,18 @@
 import React, { useState } from "react";
 import { ConnectWallet } from "@thirdweb-dev/react";
+import { darkTheme, lightTheme } from "@thirdweb-dev/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import styles from "../styles/Header.module.css";
 
-const customLightTheme = {
+const customDarkTheme = darkTheme({
   fontFamily: "Inter, sans-serif",
-};
+  colors: {
+    modalBg: "#000000",
+    accentText: "red",
+    // ... etc
+  },
+});
 
 const Header: React.FC = () => {
   const router = useRouter();
@@ -56,11 +62,11 @@ const Header: React.FC = () => {
               RECKTO GAMES
             </a>
           </Link>
-          <Link legacyBehavior href="/whitepaper">
+          <Link legacyBehavior href="/Whitepaper">
             <a
               id="link"
               className={
-                router.pathname === "/whitepaper" ? styles.active : styles.link
+                router.pathname === "/Whitepaper" ? styles.active : styles.link
               }
             >
               WHITEPAPER
@@ -95,7 +101,7 @@ const Header: React.FC = () => {
           )}
         </div>
       </div>
-      <ConnectWallet hideTestnetFaucet={true} />
+      <ConnectWallet theme={customDarkTheme} />
     </div>
   );
 };
