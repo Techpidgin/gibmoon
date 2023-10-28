@@ -42,7 +42,7 @@
 }
 
 .mySpan:before {
-  content: "ASSET LAYER || DEGEN LATER";
+  content: "ASSET LAYER || DEGEN LAYER";
   position: relative;
   top: 0;
   left: 0;
