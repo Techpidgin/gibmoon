@@ -4,14 +4,13 @@ import Header from "../component/Header";
 import Footer from "../component/Footer";
 import Link from "next/link";
 
-
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Header />
       <section>
         <h5>
-          <span className={styles.mySpan}>WHITEPAPER/.</span>
+          <span className={styles.mySpan}>THE GIB WHITEPAPER/.</span>
         </h5>
 
         <div className={styles.photoGrid}>
