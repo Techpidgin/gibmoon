@@ -21,7 +21,6 @@
   font-family: "Inconsolata", monospace;
   margin-right:4% ;
   margin-top: 10%;
-  font-size: 24px;
 }
 
 .mySpan:before {
@@ -96,8 +95,8 @@
   text-align: left;
   margin-top: 1.9rem;
   padding-top: 1%;
-  padding-left: 14%;
-  font-size: 24px;
+  padding-left: 4%;
+
 }
 
 .mySpan1:before {
