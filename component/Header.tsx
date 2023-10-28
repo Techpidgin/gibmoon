@@ -27,7 +27,7 @@ const Header: React.FC = () => {
       <div className={styles.logoSection}>
         <Link href="/"> {/* Add Link component around the logo */}
           <a>
-            <img src="/logo.png" alt="Logo" className={styles.logo} />
+            <img src="/logos.png" alt="Logo" className={styles.logo} />
           </a>
         </Link>
       </div>
