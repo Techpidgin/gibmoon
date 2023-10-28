@@ -1,3 +1,16 @@
+.container {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0px;
+  background-image: url("/wall.jpeg"); /* Set the background image URL */
+  background-size: cover; /* Cover the entire container with the image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  background-position: center; /* Center the background image */
+  text-align: center;
+  /* Adjust the background opacity */
+  opacity: 0.99;
+}
 
 .mySpan {
   position: relative;
@@ -6,20 +19,18 @@
   color: transparent;
   white-space: nowrap;
   font-family: "Inconsolata", monospace;
-  text-align: left;
-  margin-top: 5.5rem;;
-  font-weight: lighter;
-  padding-left: 5%;
+  margin-right:4% ;
+  margin-top: 10%;
 }
 
 .mySpan:before {
-  content: "ASSET LAYER ON ETHEREUM/.";
+  content: "ASSET LAYER ON ETHEREUM";
   position: relative;
   top: 0;
   left: 0;
   overflow: hidden;
   text-indent: 0;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .mySpan:hover {
@@ -79,25 +90,23 @@
   display: inline-block;
   color: transparent;
   white-space: nowrap;
-  line-height: 2em;
+  line-height: 1em;
   font-family: "Inconsolata", monospace;
   text-align: left;
-  margin-top: 0.5rem;
-  padding-bottom: 0%;
-  padding-top: 2%;
-  font-weight: lighter;
-  padding-left: 5%;
+  margin-top: 1.9rem;
+  padding-top: 1%;
+  padding-left: 14%;
 }
 
 .mySpan1:before {
-  content: 'REWARD LAYER BUILT ON ARBITRUM/.';
+  content: 'REWARD LAYER BUILT ON ARBITRUM';
   position: relative;
   width: 100%;
   top: 0;
   left: 0;
   overflow: hidden;
   text-indent: 0;
-  color: rgb(61, 201, 143);
+  color: rgb(21, 216, 135);
 }
 
 .mySpan1:hover {
@@ -154,20 +163,9 @@
 }
 
 /* Existing styles for other elements in your page */
-.stakingInfo1 > h5 {
-  font-family: "Inconsolata", monospace;
-  text-align: left;
-  margin-top: 3.5rem;
-  padding-bottom: 0%;
-  padding-top: 2%;
-  font-size: 250%;
-  font-weight: lighter;
-  padding-left: 5%;
-}
 
 .button {
-  position: absolute;
-  top: 65%;
+  /* Modify button styles to align it with the write-ups */
   background-color: #fffdfd;
   border-radius: 10px;
   border: none;
@@ -175,15 +173,13 @@
   font-size: 20px;
   color: #000000;
   padding: 15px;
+  /* Adjust the margin and padding to position the button */
+  margin-right: 54%; /* Top margin 1%, no right margin, no bottom margin, left margin 5% */
   width: 250px;
-  transition-duration: 0.9s;
   text-align: center;
-  transition-duration: 0.4s;
   text-decoration: none;
   overflow: hidden;
   cursor: pointer;
-  margin: 1%;
-  margin-left: 5%;
 }
 .button:before {
   content: 'GIB';
@@ -195,6 +191,9 @@
   text-indent: 0;
   color: rgb(0, 0, 0);
 }
+
+/* Rest of your CSS styles... */
+
 
 
 
@@ -250,40 +249,34 @@
 /* Add styles for small screens (up to 768px) */
 @media (max-width: 768px) {
   .mySpan {
-    font-size: 24px; /* Adjust font size for small screens */
+    font-size: 24px;
+    margin-left: 14%; /* Adjust font size for small screens */
   }
   .mySpan1 {
     font-size: 24px; /* Adjust font size for small screens */
   }
   .button {
-    font-size: 16px; /* Adjust font size for small screens */
-     top:unset;
+    font-size: 16px;
+    margin-left: 14%; 
+     /* Adjust font size for small screens */
   }
 }
 
 /* Add styles for larger screens */
 @media (min-width: 769px) {
   .mySpan {
-    font-size: 48px; /* Adjust font size for larger screens */
+    font-size: 48px;
+    /* Adjust font size for larger screens */
   }
   .mySpan1 {
     font-size: 48px; /* Adjust font size for larger screens */
   }
   .button {
     font-size: 20px; /* Adjust font size for larger screens */
-
   }
 }
 
-.info {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 24px;
-  text-align: center;
-  flex-wrap: wrap;
-  gap: 24px;
-}
+
 
 /* Restyled Footer */
 .footer {
@@ -298,9 +291,6 @@
   transition: background-color 0.3s ease; /* Add a subtle background color transition */
 }
 
-.footername {
-  font-size: 12px; /* Increase the font size */
-  color: #f1f1f1; /* Lighter text color */
-  margin-left: 75%;
-  padding-top: 20%;
-}
+
+
+
