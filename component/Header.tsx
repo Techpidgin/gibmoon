@@ -90,7 +90,7 @@ const Header: React.FC = () => {
                 <a>CLAIMS</a>
               </Link>
               <Link legacyBehavior href="/recktos">
-                <a>RECKTOS</a>
+                <a>RECKTO GAMES</a>
               </Link>
               <Link legacyBehavior href="/whitepaper">
                 <a>WHITEPAPER</a>
