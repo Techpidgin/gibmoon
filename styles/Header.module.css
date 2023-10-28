@@ -13,7 +13,7 @@
 .logoSection {
   display: flex;
   align-items: center;
-  flex: 1; /* Expand to fill available space */
+  flex: 5; /* Expand to fill available space */
 }
 
 .logo {
@@ -30,182 +30,25 @@
 
 .link {
   font-size: medium;
-  font-weight: 12px;
+  font-weight:bolder;
   margin-right: 60px;
-  margin-left: 60;
+  margin-left: 60px;
   color: rgb(255, 255, 255);
   text-decoration: none;
   transition: color 0.1s;
 }
 
 .link:hover {
-  color: rgb(61, 201, 143);
-}
-
-.button1 {
-  position: absolute;
-  background-color: #fffdfd;
-  border-radius: 10px;
-  border: none;
-  font-family: "Inconsolata", monospace;
-  font-size: 10px;
-  color: #000000;
-  padding: 15px;
-  width: 100px;
-  transition-duration: 0.9s;
-  text-align: center;
-  transition-duration: 0.4s;
-  text-decoration: none;
-  overflow: hidden;
-  cursor: pointer;
-  margin: 5%;
-}
-.button1:before {
-  content: 'HOME';
-  position: relative;
-  width: 100%;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  text-indent: 0;
-  color: rgb(0, 0, 0);
+  color:rgb(21, 216, 135);
 }
 
 
 
-@keyframes show {
-  93% {
-    color: transparent;
-  }
-  94% {
-    color: rgb(250, 238, 238);
-  }
-  100% {
-    color: rgb(226, 216, 216);
-  }
-}
-
-.button1:hover:before {
-  animation: texte 0.8s linear forwards;
-}
-
-@keyframes texte {
-  0 {
-    content: "4@,3SAs";
-  }
-  10% {
-    content: "$R6?4dS";
-  }
-  20% {
-    content: "+BDs73f";
-  }
-  30% {
-    content: "{qS<7Yh";
-  }
-  50% {
-    content: "Ai;9,bT";
-  }
-  60% {
-    content: "[o3^4Lg0";
-  }
-  70% {
-    content: "qoj4BWy-";
-  }
-  80% {
-    content: "GonQ5Tye";
-  }
-  90% {
-    content: "Go3d4<ye";
-  }
-  100% {
-    content: "";
-  }
-}
-
-.button2 {
-  position: absolute;
-  background-color: #fffdfd;
-  border-radius: 10px;
-  border: none;
-  font-family: "Inconsolata", monospace;
-  font-size: 10px;
-  color: #000000;
-  padding: 15px;
-  width: 100px;
-  transition-duration: 0.9s;
-  text-align: center;
-  transition-duration: 0.4s;
-  text-decoration: none;
-  overflow: hidden;
-  cursor: pointer;
-  margin: 5%;
-}
-.button2:before {
-  content: 'CLAIM';
-  position: relative;
-  width: 100%;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  text-indent: 0;
-  color: rgb(0, 0, 0);
-}
-
-
-
-@keyframes show {
-  93% {
-    color: transparent;
-  }
-  94% {
-    color: rgb(250, 238, 238);
-  }
-  100% {
-    color: rgb(226, 216, 216);
-  }
-}
-
-.button2:hover:before {
-  animation: texte 0.8s linear forwards;
-}
-
-@keyframes texte {
-  0 {
-    content: "4@,3SAs";
-  }
-  10% {
-    content: "$R6?4dS";
-  }
-  20% {
-    content: "+BDs73f";
-  }
-  30% {
-    content: "{qS<7Yh";
-  }
-  50% {
-    content: "Ai;9,bT";
-  }
-  60% {
-    content: "[o3^4Lg0";
-  }
-  70% {
-    content: "qoj4BWy-";
-  }
-  80% {
-    content: "GonQ5Tye";
-  }
-  90% {
-    content: "Go3d4<ye";
-  }
-  100% {
-    content: "";
-  }
-}
 .active {
-  font-size: small;
+  font-size: bolder;
   font-weight: 900;
   margin-right: 20px;
-  color: rgb(255, 255, 255);
+  color:rgb(21, 216, 135);
 }
 
 /* Styles for the mobile menu icon and content */
@@ -266,3 +109,10 @@
     color: rgb(13, 218, 173);
   }
 }
+.menuIcon {
+  width: 24px; /* Set the width and height as needed */
+  height: 24px;
+  margin-right: 8px; /* Adjust the spacing between the icon and text */
+}
+
+/* Telegram link style (optional) */
