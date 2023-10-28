@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { ConnectWallet } from "@thirdweb-dev/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-
 import styles from "../styles/Header.module.css";
 
 const customLightTheme = {
@@ -20,7 +19,11 @@ const Header: React.FC = () => {
   return (
     <div className={styles.container}>
       <div className={styles.logoSection}>
-        <img src="/logo.png" alt="Logo" className={styles.logo} />
+        <Link href="/"> {/* Add Link component around the logo */}
+          <a>
+            <img src="/logo.png" alt="Logo" className={styles.logo} />
+          </a>
+        </Link>
       </div>
       <div className={styles.menuSection}>
         {/* Desktop Menu */}
@@ -53,19 +56,18 @@ const Header: React.FC = () => {
               RECKTOS
             </a>
           </Link>
-
-          <Link legacyBehavior href="/whitepaper">
+          <Link legacyBehavior href="/Whitepaper">
             <a
               id="link"
               className={
-                router.pathname === "/whitepaper"
-                  ? styles.active
-                  : styles.link
+                router.pathname === "/Whitepaper" ? styles.active : styles.link
               }
             >
               WHITEPAPER
             </a>
           </Link>
+          
+          
         </div>
 
         {/* Mobile Menu */}
@@ -84,19 +86,16 @@ const Header: React.FC = () => {
               <Link legacyBehavior href="/recktos">
                 <a>RECKTOS</a>
               </Link>
-              
               <Link legacyBehavior href="/whitepaper">
                 <a>WHITEPAPER</a>
               </Link>
+              
               
             </div>
           )}
         </div>
       </div>
-      <ConnectWallet
-       
-        hideTestnetFaucet={true}
-      />
+      <ConnectWallet hideTestnetFaucet={true} />
     </div>
   );
 };
