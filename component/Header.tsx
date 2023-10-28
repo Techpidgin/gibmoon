@@ -62,11 +62,11 @@ const Header: React.FC = () => {
               RECKTO GAMES
             </a>
           </Link>
-          <Link legacyBehavior href="/Whitepaper">
+          <Link legacyBehavior href="/whitepaper">
             <a
               id="link"
               className={
-                router.pathname === "/Whitepaper" ? styles.active : styles.link
+                router.pathname === "/whitepaper" ? styles.active : styles.link
               }
             >
               WHITEPAPER
