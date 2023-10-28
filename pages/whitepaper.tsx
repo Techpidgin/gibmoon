@@ -29,7 +29,7 @@ const Home: NextPage = () => {
                 position: "relative",
                 border: "none",
                 padding: 0,
-                margin: "0 auto", // Center the container horizontally
+                margin: "0 10%", // Center the container horizontally
                 overflow: "hidden",
                 maxWidth: "800px", // Set a maximum width to prevent it from getting too wide
               }}
