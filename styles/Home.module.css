@@ -250,14 +250,14 @@
 @media (max-width: 768px) {
   .mySpan {
     font-size: 24px;
-    margin-left: 14%; /* Adjust font size for small screens */
+     /* Adjust font size for small screens */
   }
   .mySpan1 {
     font-size: 24px; /* Adjust font size for small screens */
   }
   .button {
     font-size: 16px;
-    margin-left: 14%; 
+ 
      /* Adjust font size for small screens */
   }
 }
