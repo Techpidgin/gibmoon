@@ -27,7 +27,7 @@ const Claim: React.FC = () => {
   useEffect(() => {
     // Fetch ETH data
     fetch(
-      "https://teal-managing-emu-484.mypinata.cloud/ipfs/QmNXtfYFiyUspSkZdEVnrxP8ziEsyXZRNqUVYKTKpi9vv9?_gl=1*c0u38x*_ga*NDIyOTU5MzMzLjE2OTgwOTE3MDQ.*_ga_5RMPXG14TE*MTY5OTA0NTA5Mi4xMC4xLjE2OTkwNDUxNzEuNTguMC4w"
+      "https://teal-managing-emu-484.mypinata.cloud/ipfs/Qmc3mbgmKJp8hvh6TLxrVSceMp9VBtVrZpHxeBPApm93mU?_gl=1*cel39v*_ga*NDIyOTU5MzMzLjE2OTgwOTE3MDQ.*_ga_5RMPXG14TE*MTY5OTA0NTA5Mi4xMC4xLjE2OTkwNDU2ODMuNjAuMC4w."
     )
       .then((response) => response.json())
       .then((jsonData) => {
@@ -41,7 +41,7 @@ const Claim: React.FC = () => {
 
     // Fetch ARB data
     fetch(
-      "https://teal-managing-emu-484.mypinata.cloud/ipfs/Qmc3mbgmKJp8hvh6TLxrVSceMp9VBtVrZpHxeBPApm93mU"
+      "https://teal-managing-emu-484.mypinata.cloud/ipfs/QmNXtfYFiyUspSkZdEVnrxP8ziEsyXZRNqUVYKTKpi9vv9?_gl=1*1x3e1s5*_ga*NDIyOTU5MzMzLjE2OTgwOTE3MDQ.*_ga_5RMPXG14TE*MTY5OTA0NTA5Mi4xMC4xLjE2OTkwNDU4OTEuNjAuMC4w."
     )
       .then((response) => response.json())
       .then((jsonData) => {
