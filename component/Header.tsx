@@ -1,9 +1,12 @@
+// Header.tsx
 import React, { useState } from "react";
 import { ConnectWallet } from "@thirdweb-dev/react";
-import { darkTheme, lightTheme } from "@thirdweb-dev/react";
+import { darkTheme } from "@thirdweb-dev/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import styles from "../styles/Header.module.css";
+
+
 
 const customDarkTheme = darkTheme({
   fontFamily: "Inter, sans-serif",
@@ -21,82 +24,62 @@ const Header: React.FC = () => {
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
+  
 
   return (
     <div className={styles.container}>
       <div className={styles.logoSection}>
-        <Link href="/"> {/* Add Link component around the logo */}
+        <Link legacyBehavior href="/">
           <a>
             <img src="/logos.png" alt="Logo" className={styles.logo} />
           </a>
         </Link>
       </div>
-      <div className={styles.menuSection}>
-        {/* Desktop Menu */}
-        <div className={styles.desktopMenu}>
+      <div >
+        <div className={styles.menuSection}>
           <Link legacyBehavior href="/">
-            <a
-              id="link"
-              className={router.pathname === "/" ? styles.active : styles.link}
-            >
-              HOME
-            </a>
+            <a className={router.pathname === "/" ? styles.mySpan : styles.mySpan}>HOME🏠</a>
           </Link>
           <Link legacyBehavior href="/claim">
-            <a
-              id="link"
-              className={
-                router.pathname === "/claim" ? styles.active : styles.link
-              }
-            >
-              CLAIMS
-            </a>
+            <a className={router.pathname === "/claim" ? styles.mySpan : styles.mySpan}>CLAIMS🚀</a>
           </Link>
-          <Link legacyBehavior href="/recktos">
-            <a
-              id="link"
-              className={
-                router.pathname === "/recktos" ? styles.active : styles.link
-              }
-            >
-              RECKTO GAMES
-            </a>
+          <Link legacyBehavior href="/sportbet">
+            <a className={router.pathname === "/sportbet" ? styles.mySpan : styles.mySpan}>SPORTS BETTING⚽</a>
+          </Link>
+          <Link legacyBehavior href="/casino">
+            <a className={router.pathname === "/casino" ? styles.mySpan : styles.mySpan}>CASINO🎲</a>
           </Link>
           <Link legacyBehavior href="/whitepaper">
-            <a
-              id="link"
-              className={
-                router.pathname === "/whitepaper" ? styles.active : styles.link
-              }
-            >
-              WHITEPAPER
-            </a>
+            <a className={router.pathname === "/whitepaper" ? styles.mySpan : styles.mySpan}>WHITEPAPER📄 </a>
           </Link>
-          
-          
+          <Link legacyBehavior href="/oat">
+            <a className={router.pathname === "/oat" ? styles.mySpan : styles.mySpan}>OAT🔥</a>
+          </Link>
         </div>
-
-        {/* Mobile Menu */}
         <div className={styles.mobileMenu}>
           <div className={styles.mobileIcon} onClick={toggleMobileMenu}>
             <span>&#9776;</span>
           </div>
           {mobileMenuOpen && (
-            <div className={styles.mobileMenuContent}>
+  <div className={`${styles.mobileMenuContent} ${mobileMenuOpen ? styles.mobileMenuContentVisible : styles.mobileMenuContentHidden}`}>
               <Link legacyBehavior href="/">
-                <a>HOME</a>
+                <a className={styles.mySpan}>HOME🏠</a>
               </Link>
               <Link legacyBehavior href="/claim">
-                <a>CLAIMS</a>
+                <a className={styles.mySpan}>CLAIMS🚀</a>
               </Link>
-              <Link legacyBehavior href="/recktos">
-                <a>RECKTO GAMES</a>
+              <Link legacyBehavior href="/sportbet">
+                <a className={styles.mySpan}>SPORTS BETTING⚽</a>
+              </Link>
+              <Link legacyBehavior href="/casino">
+                <a className={styles.mySpan}>CASINO🎲</a>
               </Link>
               <Link legacyBehavior href="/whitepaper">
-                <a>WHITEPAPER</a>
+                <a className={styles.mySpan}>WHITEPAPER📄</a>
               </Link>
-              
-              
+              <Link legacyBehavior href="/oat">
+                <a className={styles.mySpan}>OAT🔥</a>
+              </Link>
             </div>
           )}
         </div>
@@ -107,3 +90,4 @@ const Header: React.FC = () => {
 };
 
 export default Header;
+
