@@ -27,7 +27,7 @@ const Claim: React.FC = () => {
   useEffect(() => {
     // Fetch ETH data
     fetch(
-      "https://teal-managing-emu-484.mypinata.cloud/ipfs/Qmc3mbgmKJp8hvh6TLxrVSceMp9VBtVrZpHxeBPApm93mU?_gl=1*cel39v*_ga*NDIyOTU5MzMzLjE2OTgwOTE3MDQ.*_ga_5RMPXG14TE*MTY5OTA0NTA5Mi4xMC4xLjE2OTkwNDU2ODMuNjAuMC4w."
+      "https://teal-managing-emu-484.mypinata.cloud/ipfs/QmcsuWR971NxRQX6xNEkxoJcQeicpLG8w7B4f6NzKU8Ctj?_gl=1*1nprq6p*_ga*NDIyOTU5MzMzLjE2OTgwOTE3MDQ.*_ga_5RMPXG14TE*MTY5ODA5MTcwNy4xLjEuMTY5ODA5MjY4Mi41Mi4wLjA."
     )
       .then((response) => response.json())
       .then((jsonData) => {
@@ -41,7 +41,7 @@ const Claim: React.FC = () => {
 
     // Fetch ARB data
     fetch(
-      "https://teal-managing-emu-484.mypinata.cloud/ipfs/QmNXtfYFiyUspSkZdEVnrxP8ziEsyXZRNqUVYKTKpi9vv9?_gl=1*1x3e1s5*_ga*NDIyOTU5MzMzLjE2OTgwOTE3MDQ.*_ga_5RMPXG14TE*MTY5OTA0NTA5Mi4xMC4xLjE2OTkwNDU4OTEuNjAuMC4w."
+      "https://teal-managing-emu-484.mypinata.cloud/ipfs/QmS5Jxs8nFq1uqLC13edscXakNV8iMoYiQpioAVvj8VoMC?_gl=1*1uc713l*_ga*NDIyOTU9MTQ4LjE2OTgwOTM0NC4xLjEuMTY5ODA5MzQwLjAuMC4wLjA."
     )
       .then((response) => response.json())
       .then((jsonData) => {
@@ -212,15 +212,15 @@ const Claim: React.FC = () => {
           <section className={styles.stakingInfo1}>
             <h5>
               <img
-                src="logo.png"
+                src="logos.png"
                 alt=""
                 style={{ width: "20px", height: "20px" }}
               />{" "}
               GET READY TO CLAIM $GIB TOKENS<br></br>
               🎉THIS IS HOW YOU CAN SUPERCHARGE YOUR REWARDS! 🎉<br></br>
               🤝JOIN $GIB COMMUNITY <br></br>
-              💰MAKE VIDEOS FOR SOME EXTRA $GIB FUN.<br></br>
-              💰BE PART OF THE $GIB MOON GANG AND 🤝CONNECT WITH CHADS.<br></br>
+              🤝CONNECT WITH CHADS.<br></br>
+              💰BE PART OF THE $GIB MOON GANG AND <br></br>
               🎁CLAIM YOUR INITIAL $GIB TOKENS.<br></br>
               🚀MEME POWER BOOST <br></br>
               🌟TAG US @GIBISBIG<br></br>
